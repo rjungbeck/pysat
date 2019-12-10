@@ -18,7 +18,7 @@ suffixes= {
 def pythonCall(cmd):
     fullCommand= sys.executable + " " + cmd
     print(fullCommand)
-    #os.system(fullCommand)
+    os.system(fullCommand)
 
 def main():
     parser=argparse.ArgumentParser(description="Dependency installation",
