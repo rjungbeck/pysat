@@ -1513,6 +1513,36 @@ class CNFPlus(CNF, object):
 
         return wcnf
 
+    def copy(self):
+        """
+            This method can be used for creating a copy of a CNFPlus object.
+            It creates another object of the :class:`CNFPlus` class, call the
+            copy function of CNF class and makes use of the *deepcopy*
+            functionality to copy the atmost constraints.
+
+            :return: an object of class :class:`CNFPlus`.
+
+            Example:
+
+            .. code-block:: python
+
+                >>> cnf1 = CNFPlus()
+                >>> cnf1.extend([[-1, 2], [1]])
+                >>> cnf1.append([[1, 2], 1], is_atmost=True)
+                >>> cnf2 = cnf1.copy()
+                >>> print(cnf2.clauses)
+                [[-1, 2], [1]]
+                >>> print(cnf2.nv)
+                2
+                >>> print(cnf2.atmosts)
+                [[[1, 2], 1]]
+        """
+
+        cnfplus = super(CNFPlus, self).copy()
+        cnfplus.atmosts = copy.deepcopy(self.atmosts)
+
+        return cnfplus
+
 
 #
 #==============================================================================
@@ -1785,3 +1815,39 @@ class WCNFPlus(WCNF, object):
         cnf.commends = self.comments[:]
 
         return cnf
+
+    def copy(self):
+        """
+            This method can be used for creating a copy of a WCNFPlus object.
+            It creates another object of the :class:`WCNFPlus` class, call the
+            copy function of WCNF class and makes use of the *deepcopy*
+            functionality to copy the atmost constraints.
+
+            :return: an object of class :class:`WCNFPlus`.
+
+            Example:
+
+            .. code-block:: python
+
+                >>> cnf1 = WCNFPlus()
+                >>> cnf1.append([-1, 2])
+                >>> cnf1.append([1], weight=10)
+                >>> cnf1.append([[1, 2], 1], is_atmost=True)
+                >>> cnf2 = cnf1.copy()
+                >>> print(cnf2.hard)
+                [[-1, 2]]
+                >>> print(cnf2.soft)
+                [[1]]
+                >>> print(cnf2.wght)
+                [10]
+                >>> print(cnf2.nv)
+                2
+                >> print(cnf2.atms)
+                [[[1, 2], 1]]
+
+        """
+
+        wcnfplus = super(WCNFPlus, self).copy()
+        wcnfplus.atms = copy.deepcopy(self.atms)
+
+        return wcnfplus
