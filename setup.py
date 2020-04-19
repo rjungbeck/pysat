@@ -105,7 +105,7 @@ if platform.system() == 'Darwin':
 elif platform.system() == 'Windows':
     compile_flags = ['-DNBUILD', '-DNLGLYALSAT' , '/DINCREMENTAL', '-DNLGLOG',
             '-DNDEBUG', '-DNCHKSOL', '-DNLGLFILES', '-DNLGLDEMA',
-            '/experimental:preprocessor', '-I./zlib']
+            '-I./zlib']
     cpplib = []
 
 
