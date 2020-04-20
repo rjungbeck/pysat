@@ -19,7 +19,8 @@ install:
   - "%PYTHON%\\python.exe -m pip install --upgrade pip setuptools wheel requests pytest"
   - "%PYTHON%\\python.exe instdep.py"
 
-build: off
+build:
+   - "%PYTHON%\\python.exe setup.py bdist_wheel"
 
 test_script:
   # Put your test command here.
@@ -29,7 +30,6 @@ test_script:
   # Note that you must use the environment variable %PYTHON% to refer to
   # the interpreter you're using - Appveyor does not do anything special
   # to put the Python version you want to use on PATH.
-  - "%PYTHON%\\python.exe setup.py bdist_wheel"
   - "%PYTHON%\\python.exe runtest.py"
 
 after_test:
