@@ -45,11 +45,11 @@ sources = {
         'solvers/lingeling.tar.gz'
     ),
     'maplechrono': (
-        'http://sat2018.forsyte.tuwien.ac.at/solvers/main_and_glucose_hack/MapleLCMDistChronoBT.zip',
+        'https://github.com/pysathq/pysat/raw/master/solvers/maplechrono.zip',
         'solvers/maplechrono.zip'
     ),
     'maplecm': (
-        'http://sat2018.forsyte.tuwien.ac.at/solvers/main_and_glucose_hack/Maple_CM.zip',
+        'https://github.com/pysathq/pysat/raw/master/solvers/maplecm.zip',
         'solvers/maplecm.zip'
     ),
     'maplesat': (
