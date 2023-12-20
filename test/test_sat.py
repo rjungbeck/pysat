@@ -7,7 +7,7 @@ solvers = ['cadical',
            'lingeling',
            'maplechrono',
            'maplecm',
-           'maplesat',
+           #'maplesat',
            'minicard',
            'minisat22',
            'minisat-gh']
