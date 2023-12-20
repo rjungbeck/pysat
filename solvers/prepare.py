@@ -52,10 +52,10 @@ sources = {
         'https://github.com/pysathq/pysat/raw/master/solvers/maplecm.zip',
         'solvers/maplecm.zip'
     ),
-    'maplesat': (
-        'https://sites.google.com/a/gsd.uwaterloo.ca/maplesat/MapleCOMSPS_pure_LRB.zip',
-        'solvers/maplesat.zip'
-    ),
+    #'maplesat': (
+    #   'https://sites.google.com/a/gsd.uwaterloo.ca/maplesat/MapleCOMSPS_pure_LRB.zip',
+    #    'solvers/maplesat.zip'
+    #),
     'minicard': (
         'https://github.com/liffiton/minicard/archive/v1.2.tar.gz',
         'http://reason.di.fc.ul.pt/~aign/storage/mirror/minicard-v1.2.tar.gz',
@@ -81,7 +81,7 @@ to_extract = {
     'lingeling': ['druplig-009.zip', 'lingeling-bbc-9230380-160707.tar.gz'],
     'maplechrono': [],
     'maplecm': [],
-    'maplesat': [],
+    #'maplesat': [],
     'minicard': [],
     'minisat22': [],
     'minisatgh': []
@@ -231,7 +231,7 @@ to_move = {
         ('sources/mtl', 'mtl'),
         ('sources/utils', 'utils')
     ],
-    'maplesat': [],
+    #'maplesat': [],
     'minicard': [
         ('core', '_core'),
         ('minicard', 'core')
@@ -351,18 +351,18 @@ to_remove = {
         'sources',
         'starexec_build'
     ],
-    'maplesat': [
-        'core/Dimacs.h',
-        'core/Main.cc',
-        'core/Makefile',
-        'doc',
-        'mtl/config.mk',
-        'mtl/template.mk',
-        'simp',
-        'utils/Makefile',
-        'LICENSE',
-        'README'
-    ],
+    #'maplesat': [
+    #    'core/Dimacs.h',
+    #    'core/Main.cc',
+    #    'core/Makefile',
+    #    'doc',
+    #    'mtl/config.mk',
+    #    'mtl/template.mk',
+    #    'simp',
+    #    'utils/Makefile',
+    #    'LICENSE',
+    #    'README'
+    #],
     'minicard': [
         '_core',
         'encodings',
