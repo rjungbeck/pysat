@@ -19,7 +19,8 @@ suffixes= {
     (3, 9, "64bit"): "cp39-cp39-win_amd64",
     (3, 10, "64bit"): "cp310-cp310win_amd64",
     (3, 11, "64bit"): "cp311-cp311-win_amd64",
-    (3, 12, "64bit"): "cp312-cp312-win_amd64"
+    (3, 12, "64bit"): "cp312-cp312-win_amd64",
+    (3, 13, "64bit"): "cp313-cp313-win_amd64"
 }
 
 def pythonCall(cmd):
