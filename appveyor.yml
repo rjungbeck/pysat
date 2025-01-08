@@ -53,7 +53,7 @@ deploy:
   description: 'Wheels'
   provider: GitHub
   auth_token:
-    secure: IZmfRZIarvVrNwNMx+M12KWS9HiJGZNPzVqNXusdjtZFD++EHNMh2IF3KJstd0f5 # your encrypted token from GitHub
+    secure: 4MZFR0N93JCMB/oNOvGIXOFc/v99kO1av68bMZmHeFYkgh4YpvfWkeZuOg5qIJU7ysVAoTiwCQgmq4FxPlkeqQdxI1NCuvI4W9uJUpPeMDo12XcG/ZNHseIy1mXUb9ui # your encrypted token from GitHub
   artifact: wheel          # upload all wheels to release assets
   draft: false
   prerelease: false
