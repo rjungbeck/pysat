@@ -7,8 +7,6 @@ import re
 import requests
 
 suffixes= {
-    (3, 6, "32bit"): "cp36-cp36m-win32",
-    (3, 7, "32bit"): "cp37-cp37m-win32",
     (3, 8, "32bit"): "cp38-cp38-win32",
     (3, 9, "32bit"): "cp39-cp39-win32",
     (3, 10, "32bit"): "cp310-cp310-win32",
@@ -20,7 +18,8 @@ suffixes= {
     (3, 10, "64bit"): "cp310-cp310win_amd64",
     (3, 11, "64bit"): "cp311-cp311-win_amd64",
     (3, 12, "64bit"): "cp312-cp312-win_amd64",
-    (3, 13, "64bit"): "cp313-cp313-win_amd64"
+    (3, 13, "64bit"): "cp313-cp313-win_amd64",
+    (3, 14, "64bit"): "cp314-cp314-win_amd64"
 }
 
 def pythonCall(cmd):
