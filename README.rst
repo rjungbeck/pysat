@@ -1,4 +1,21 @@
-PySAT: SAT technology in Python
+|statusSummary| |statusCount| |statusLast| |statusBadge|
+
+.. |statusSummary| image:: https://timestampgit.dev/api/statusSummary/rjungbeck/pysat
+   :alt: Timestamp GIT
+   :target: https://timestampgit.dev/status/rjungbeck/pysat
+
+.. |statusCount| image:: https://timestampgit.dev/api/statusCount/rjungbeck/pysat
+   :alt: Timestamp GIT
+   :target: https://timestampgit.dev/status/rjungbeck/pysat
+
+.. |statusLast| image:: https://timestampgit.dev/api/statusLast/rjungbeck/pysat
+   :alt: Timestamp GIT
+   :target: https://timestampgit.dev/status/rjungbeck/pysat
+
+.. |statusBadge| image:: https://timestampgit.dev/api/statusBadge/rjungbeck/pysat
+   :alt: Timestamp GIT
+   :target: https://timestampgit.dev/status/rjungbeck/pysat: 
+PySAT technology in Python
 ===============================
 
 PySAT is a Python (2.7, 3.4+) toolkit, which aims at providing a simple and
